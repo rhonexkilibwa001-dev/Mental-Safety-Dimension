@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Safety Dimension</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container navbar">
+        <div class="brand">
+          <span class="brand-mark">M</span>
+          <span>Mental Safety Dimension</span>
+        </div>
+        <nav class="nav">
+          <a href="#resources">Resources</a>
+          <a href="#community">Community</a>
+          <a href="#checkin">Check-In</a>
+          <a href="#support">Support</a>
+        </nav>
+        <button class="nav-button">Get Support</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">A safe space to heal</p>
+            <h1>Support, community, and calm for every step forward.</h1>
+            <p class="subtitle">
+              Mental Safety Dimension is a community hub built to help people
+              feel supported, informed, and connected through difficult moments.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#community" class="primary-btn">Join the Community</a>
+              <a href="#resources" class="secondary-btn">Explore Resources</a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>24/7</strong>
+                <span>support guidance</span>
+              </div>
+              <div>
+                <strong>500+</strong>
+                <span>community members</span>
+              </div>
+              <div>
+                <strong>12k</strong>
+                <span>check-ins tracked</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="mini-card">
+              <span class="mini-label">Today's focus</span>
+              <h3>Grounding & calm</h3>
+              <p>Take 5 slow breaths and notice one thing you can feel.</p>
+            </div>
+
+            <div class="support-pill">
+              <span class="dot"></span>
+              Immediate support available
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Resources</p>
+            <h2>Helpful tools for daily wellbeing</h2>
+          </div>
+
+          <div id="resourceList" class="resource-grid"></div>
+        </div>
+      </section>
+
+      <section id="community" class="section alt">
+        <div class="container community-layout">
+          <div class="community-copy">
+            <p class="eyebrow">Community</p>
+            <h2>Share what helps you cope</h2>
+            <p>
+              This space is meant for encouragement, reflection, and
+              connection. You are not alone.
+            </p>
+          </div>
+
+          <div class="community-card">
+            <form id="postForm" class="form">
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+
+              <div class="input-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="What do you want to share?" required />
+              </div>
+
+              <div class="input-group">
+                <label for="content">Message</label>
+                <textarea
+                  id="content"
+                  name="content"
+                  rows="4"
+                  placeholder="Write something supportive..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="primary-btn">Post to Community</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="postList" class="post-list"></div>
+        </div>
+      </section>
+
+      <section id="checkin" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Daily check-in</p>
+            <h2>How are you feeling today?</h2>
+          </div>
+
+          <form id="checkinForm" class="checkin-form">
+            <div class="input-group">
+              <label for="mood">Mood</label>
+              <select id="mood" name="mood" required>
+                <option value="">Select a mood</option>
+                <option value="Happy">Happy</option>
+                <option value="Calm">Calm</option>
+                <option value="Tired">Tired</option>
+                <option value="Anxious">Anxious</option>
+                <option value="Overwhelmed">Overwhelmed</option>
+                <option value="Sad">Sad</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="note">Optional note</label>
+              <textarea id="note" name="note" rows="3" placeholder="A brief note about your day..."></textarea>
+            </div>
+
+            <button type="submit" class="primary-btn">Save check-in</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="support" class="section alt">
+        <div class="container support-grid">
+          <div class="support-copy">
+            <p class="eyebrow">Need support?</p>
+            <h2>Reach out to a caring community</h2>
+            <p>
+              If you're feeling overwhelmed, please contact a trusted person or
+              a local mental health professional. Immediate crisis support is
+              always available through your local emergency line or crisis service.
+            </p>
+
+            <div class="emergency-box">
+              <strong>Emergency support:</strong>
+              <p>If you are in immediate danger or feel unable to stay safe, call emergency services now.</p>
+            </div>
+          </div>
+
+          <div class="community-card">
+            <form id="contactForm" class="form">
+              <div class="input-group">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" name="name" placeholder="Your name" required />
+              </div>
+
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="input-group">
+                <label for="message">How can we support you?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us what you're going through..." required></textarea>
+              </div>
+
+              <button type="submit" class="primary-btn">Send request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 Mental Safety Dimension</p>
+        <p>Community care for mental wellbeing</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

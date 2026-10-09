@@ -1,0 +1,43 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "title": "Breathing for Anxiety Relief",
+      "category": "Stress Relief",
+      "description": "A guided breathing technique to reduce panic and calm racing thoughts.",
+      "link": "https://example.com"
+    },
+    {
+      "id": 2,
+      "title": "Mindfulness Journal Prompts",
+      "category": "Wellbeing",
+      "description": "Daily prompts to help you reflect, reset, and reconnect with yourself.",
+      "link": "https://example.com"
+    },
+    {
+      "id": 3,
+      "title": "Healthy Sleep Routine",
+      "category": "Sleep Support",
+      "description": "Simple strategies to build a calming nighttime routine and improve rest.",
+      "link": "https://example.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "name": "Nia",
+      "title": "Small habits that helped me this week",
+      "content": "I started doing a 5-minute breathing exercise in the morning and it helped me feel more grounded.",
+      "createdAt": "2026-10-09T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Mason",
+      "title": "Finding a support circle",
+      "content": "Talking to one trusted person regularly really changed my day-to-day stress levels.",
+      "createdAt": "2026-10-09T10:30:00.000Z"
+    }
+  ],
+  "checkins": [],
+  "contacts": []
+}
